@@ -1,0 +1,718 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -----fonts--------- */
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-ExtraBold";
+    src: url(./fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto-Medium";
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: "Blazed";
+    src: url(./fonts/Blazed.ttf);
+}
+
+/* ----------------colors--------------- */
+:root {
+    --primary: #f26522;
+    --secondary: #8C07FF;
+    --third: #00a7eb;
+}
+
+/* ------------------utility classes----------- */
+.flex {
+    display: flex;
+}
+
+.item-center {
+    align-items: center
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.container-fluid {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.basis50 {
+    flex-basis: 50%;
+}
+
+.disable {
+    display: none;
+}
+
+
+@media (max-width:575px) {
+    .container-fluid {
+        width: 100%;
+    }
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+
+/* <-------------------Mobile Menu--------------> */
+
+body .mobile-menu {
+    padding: 0.5rem 0.5rem;
+    background-color: var(--primary);
+    z-index: 1;
+}
+
+body .mobile-menu button {
+    cursor: pointer;
+    outline: none;
+    padding: 0.4rem 1rem;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    font-family: "Roboto-Bold";
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+body nav.mobile-nav {
+    background-color: var(--primary);
+    z-index: 100;
+    display: block;
+    position: sticky;
+    top: 0;
+}
+
+body nav.mobile-nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto-bold";
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-bottom: 1px dotted black;
+    display: block;
+}
+
+@media (min-width:767px) {
+    body nav.mobile-nav {
+        display: none;
+    }
+}
+
+
+
+
+
+/* <---------------Header--------> */
+
+header .wrapper {
+    background-color: var(--primary);
+    padding: 1rem 0;
+}
+
+header .wrapper button::selection {
+    color: var(--third);
+}
+
+header .wrapper a::selection {
+    color: var(--secondary);
+}
+
+header .wrapper h1::selection {
+    color: var(--third);
+}
+
+header .wrapper span::selection {
+    color: var(--secondary);
+}
+
+header .container-fluid .left img {
+    width: 150px;
+}
+
+header .container-fluid .left .link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: "Roboto-Bold";
+    font-weight: 500;
+    padding-top: 1.5rem;
+    margin-right: 1.8rem;
+}
+
+header .container-fluid .left .left {
+    margin-left: 5rem;
+}
+
+header .container-fluid a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 1rem;
+    font-family: "Roboto-Bold";
+}
+
+header .container-fluid a:hover {
+    color: white;
+}
+
+header .container-fluid button {
+    cursor: pointer;
+    outline: none;
+    padding: 0.4rem 1rem;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    font-family: "Roboto-Bold";
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+/* <------------------Header-Hero-----------> */
+header {
+    position: relative;
+}
+
+header .container .left {
+    padding-top: 10rem;
+}
+
+header .container .left input {
+    outline: none;
+    height: 2.6rem;
+    width: 30%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    font-family: "Roboto-Regular";
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+header .container .left button {
+    border: none;
+    cursor: pointer;
+    padding: 0.54rem 2rem;
+    border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+    background-color: var(--secondary);
+    color: white;
+    font-family: "Montserrat-ExtraBold";
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+header .container h1 {
+    font-family: "Roboto-Bold";
+    margin-top: 2rem;
+}
+
+header .container .categories a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 9rem;
+    height: 2rem;
+    padding-top: 0.3rem;
+    border-radius: 25px;
+    background-color: black;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    text-align: center;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+    font-family: "Roboto-Regular";
+}
+
+header .container .last-slogan h1 {
+    font-family: "Roboto-Regular";
+    font-size: 45px;
+    padding: 4.6rem 0;
+}
+
+header .container .last-slogan h1 span {
+    font-family: Blazed;
+    color: white;
+    font-weight: 100;
+}
+
+header .container .right img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 650px;
+}
+
+/* <---------------Header Responsive------------> */
+@media (max-width:575px) {
+    header .container .right img {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    header .wrapper {
+        padding: 0;
+    }
+
+    .mobile-nav {
+        display: flex;
+    }
+
+    header .container .right img {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header .container .left input {
+        width: 80%;
+    }
+
+    header .container .last-slogan h1 {
+        padding: 0;
+    }
+
+    header .container .last-slogan h1 {
+        display: block;
+        text-align: center;
+    }
+
+    header .container .left {
+        padding-top: 1rem;
+    }
+
+}
+
+@media (max-width:991px) {
+    header .container .right img {
+        display: none;
+    }
+
+    header .container-fluid .left .link {
+        margin-top: -1.5rem;
+    }
+
+}
+
+@media (max-width:1199.99px) {
+    header .container .right img {
+        height: 550px;
+    }
+}
+
+
+
+
+
+/* <----------------How It works?---------> */
+
+
+
+
+section#howorks h1 {
+    text-align: center;
+    font-family: "Roboto-Regular";
+    font-weight: 500;
+    padding: 2rem 0;
+    font-size: 40px;
+}
+
+section#howorks h1::selection {
+    color: var(--secondary);
+}
+
+section#howorks a span::selection {
+    color: var(--primary);
+}
+
+section#howorks h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+section#howorks h1 span {
+    font-family: "Montserrat-ExtraBold";
+}
+
+section#howorks h1 span:last-child {
+    color: var(--third);
+}
+
+section#howorks .container .tab {
+    overflow: hidden;
+    background-color: var(--third);
+}
+
+section#howorks .container .tab button {
+    font-family: "Roboto-Medium";
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 50%;
+    transition: 0.3s all ease;
+    font-size: 17px;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    border: 1px solid white;
+}
+
+section#howorks .container .tab button:hover {
+    background-color: var(--secondary);
+}
+
+section#howorks .container .tab button.active {
+    background-color: var(--primary);
+    border-bottom: 1px solid transparent;
+}
+
+section#howorks .container .tabcontent {
+    display: none;
+    padding: 0px 12px;
+    border: 2px solid var(--secondary);
+    border-top: none;
+    background-color: var(--primary);
+}
+section#howorks .container .tabcontent h1{
+    padding: 2rem 0;
+}
+section#howorks .container .Buyers .main-content .left {
+    background-image: url(./images/man-cartoon.png);
+    height: 500px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+section#howorks .container #Buyers .right ul,section#howorks .container #Freelancers .right ul{
+    list-style-type:square
+}
+section#howorks .container #Buyers .right ul li,section#howorks .container #Freelancers .right ul li{
+    font-family: "Roboto-Medium";
+    font-size: 1.3rem;
+    width: 80%;
+    padding: 0.1rem 0;
+}
+section#howorks .container #Buyers .right h2,section#howorks .container #Freelancers .right h2{
+    font-family:"Montserrat-ExtraBold";
+    padding: 1rem 0; 
+    color: var(--third);
+}
+
+section#howorks .container .freelancer .main-content .left {
+    background-image: url(./images/Freelancer-photo.png);
+    height: 500px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+/* <----------------How It works? Responsive---------> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <--------------------Categories---------> */
+section#categories h1 {
+    text-align: center;
+    font-family: "Roboto-Regular";
+    font-size: 40px;
+    font-weight: 500;
+    padding: 4rem 0;
+}
+
+section#categories span::selection {
+    color: var(--secondary);
+}
+
+section#categories h1::selection {
+    color: var(--primary);
+}
+
+section#categories .container .main,
+section#categories .container .main-2 {
+    justify-content: space-around;
+    margin: 0 5rem 5rem 5rem;
+}
+
+section#categories .container .main .arrow,
+section#categories .container .main-2 .arrow {
+    width: 150px;
+    display: block;
+    height: 3px;
+    border-radius: 25px;
+    background-color: var(--primary);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+section#categories .container .main span,
+section#categories .container .main-2 span {
+    font-family: "Roboto-Regular";
+    text-align: center;
+    display: block;
+    margin: 1rem 0;
+}
+
+section#categories .container .main a,
+section#categories .container .main-2 a {
+    text-decoration: none;
+    color: black;
+}
+
+section#categories .container .mobile-categories {
+    justify-content: space-around;
+}
+
+section#categories .container .mobile-categories .arrow {
+    width: 150px;
+    display: block;
+    height: 3px;
+    border-radius: 25px;
+    background-color: var(--primary);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+section#categories .container .mobile-categories a {
+    text-decoration: none;
+    color: black;
+}
+
+section#categories .container .mobile-categories span {
+    font-family: "Roboto-Regular";
+    text-align: center;
+    display: block;
+    margin: 1rem 0;
+}
+
+
+
+
+/* <--------------categories Responsive-------------> */
+@media (max-width: 767.98px) {
+    .m-disable {
+        display: none;
+    }
+
+    section#categories .container .main,
+    section#categories .container .main-2 {
+        margin: 0;
+    }
+
+    section#categories .container .mobile-categories a {
+        display: inline;
+    }
+}
+
+
+/* <---------------Services--------------------> */
+
+
+
+
+
+
+
+/* -------------------------Anylitics--------------- */
+
+
+
+
+
+section#anylitics{
+    height: 300px;
+    background-color: var(--third);
+    margin: 2rem 0;
+}
+section#anylitics .container span{
+    font-family: "Roboto-Bold";
+    font-size: 60px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    margin-top: 4rem;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 17rem;
+    color: white;
+    
+}
+section#anylitics .container span::selection,section#anylitics .container h2::selection{
+    color: var(--secondary);
+}
+section#anylitics .container h2{
+    font-family: "Roboto-Bold";
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    margin-top:1rem;
+}
+section#anylitics .container .Task span{
+    margin-left: 2rem;
+}
+
+
+
+
+
+/* -------------------------Anylitics Responsive--------------- */
+
+
+
+
+
+@media (max-width: 991.98px) {
+    section#anylitics .container .Task span{
+        margin-left: 0rem;
+    }
+    section#anylitics .container h2{
+        font-size: 25px;
+    }
+    section#anylitics .container span{
+        font-size: 40px;
+        width: 13rem;
+        margin-top: 2rem;
+    }
+    section#anylitics{
+        height: 200px;
+        margin: 0.5rem;
+    }
+}
+@media (max-width: 767.98px) {
+    section#anylitics{
+        height: unset;
+    }
+    section#anylitics .container{
+        display: block;
+    }
+    section#anylitics .container span,section#anylitics .container .Task span{
+        font-size: 40px;
+        display:inline-block;
+        text-align: center;
+        padding: 0;
+        padding-top: 1rem;
+        margin-top: 0.5rem;
+        border-radius: 50px;
+        margin-left:1.5em;
+
+        
+    }
+    section#anylitics .container h2{
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        padding: 0.5rem;
+        margin-top:0rem;
+    }
+    
+}
+
+
+
+/* @media (max-width: 575.98px) {}
+@media (max-width: 767.98px) {}
+@media (max-width: 991.98px) {}
+@media (max-width: 1199.98px) {}
+@media (max-width: 1399.98px) {} */

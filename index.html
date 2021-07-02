@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BinTaak</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <nav class="mobile-nav">
+    <div class="mobile-menu flex item-center justify-between">
+      <div>
+        <img id="navbutton" onclick="mbl()" src="./icons/mobile-menu-icon.png" alt="">
+        <img id="navbutton2" onclick="mbv()" src="./icons/mobile-menu-close-icon.png" alt="">
+      </div>
+      <div>
+        <img src="./images/mobile-logo.png" alt="">
+      </div>
+      <div class="div">
+        <button>Join</button>
+      </div>
+    </div>
+    <div id="mobile-nav">
+      <a href="#">Sign In</a>
+      <a href="#">Bin</a>
+      <a href="#">Jobs</a>
+      <a href="#">About</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <div class="container-fluid flex justify-between item-center">
+          <div class="left flex item-center">
+            <a href="index.html"><img src="./images/logo.png" alt=""></a>
+            <a class="link left" href="#">Jobs</a>
+            <a class="link" href="#">Bin</a>
+            <a class="link" href="#">About</a>
+          </div>
+          <div class="right flex item-center">
+            <a href="#">Sign in</a>
+            <button>Join</button>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="right flex basis50 item-center">
+          <img src="./images/Hero-Image.png" alt="">
+        </div>
+        <div class="left flex basis50 item-center">
+          <input placeholder="Find Our Services" type="text"> <button>Search</button></input>
+        </div>
+        <h1>Most populer Cetagories:</h1>
+        <div class="categories">
+          <div class="flex item-center">
+            <a href="#">Graphics</a>
+            <a href="#">Marketing</a>
+            <a href="#">SEO</a>
+          </div>
+          <div class="flex item-center">
+            <a href="#">Web Design</a>
+            <a href="#">WordPress</a>
+            <a href="#">SMM</a>
+          </div>
+        </div>
+        <div class="last-slogan">
+          <h1>Hire Expert <span>Freelancers</span><br> For Your Business</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ----------------How It works?--------- -->
+  <section id="howorks">
+    <h1>How <a href="index.html"><span>Bin</span><span>Taak</span></a> Works?</h1>
+    <div class="container">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Buyers')" id="defaultOpen">For Buyer</button>
+        <button class="tablinks" onclick="openCity(event, 'Freelancers')">For Freelancer</button>
+      </div>
+
+      <div id="Buyers" class="tabcontent Buyers">
+        <h1>For Business Owner's</h1>
+        <div class="main-content flex item-center">
+          <div class="left basis50">
+          </div>
+          <div class="right basis50">
+            <ul>
+              <li>Search BINs and order that service you need.</li>
+              <li>After order, We take your payment and we will paid to freelancer after your mark order as completed.</li>
+              <li>If Freelancer can't, We will refund full money to your account.</li>
+            </ul>
+            <h2> Or</h2>
+            <ul>
+              <li>Create Small Job.(Like you need 1000 like in your facebook page)</li>
+              <li>After Clreating a small job, freelancer will submit your job after they done.</li>
+              <li>After freelancer submit you will mark the job as succesfull or you can reject if the freelancer done as you want.The freelancer only get paid after you mark job as completed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="Freelancers" class="tabcontent freelancer">
+        <h1>For Freelancers</h1>
+        <div class="main-content flex item-center">
+          <div class="left basis50">
+          </div>
+          <div class="right basis50">
+            <ul>
+              <li>Search BINs and order that service you need.</li>
+              <li>After order, We take your payment and we will paid to freelancer after your mark order as completed.</li>
+              <li>If Freelancer can't, We will refund full money to your account.</li>
+            </ul>
+            <h2> Or</h2>
+            <ul>
+              <li>Create Small Job.(Like you need 1000 like in your facebook page)</li>
+              <li>After Clreating a small job, freelancer will submit your job after they done.</li>
+              <li>After freelancer submit you will mark the job as succesfull or you can reject if the freelancer done as you want.The freelancer only get paid after you mark job as completed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <!-- <-----------------------Categories-------------->
+
+
+
+
+
+
+  <section id="categories">
+    <div class="heading">
+      <h1>Explore Our Marketplace</h1>
+    </div>
+    <div class="container">
+      <div class="main flex item-center">
+        <a href="#">
+          <div class="div">
+            <img width="150px" src="./icons/graphic-Design.png" alt="">
+            <div class="arrow"></div>
+            <span>Graphics & Design</span>
+          </div>
+        </a>
+        <a class="m-disable" href="#">
+          <div class="div">
+            <img src="./icons/Digital-Marketing.png" alt="">
+            <div class="arrow"></div>
+            <span>Digital Marketing</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="div">
+            <img src="./icons/writting.png" alt="">
+            <div class="arrow"></div>
+            <span>Writing & Translation</span>
+          </div>
+        </a>
+      </div>
+      <div class="main-2 flex item-center">
+        <a href="#">
+          <div class="div">
+            <img src="./icons/video-annimation.png" alt="">
+            <div class="arrow"></div>
+            <span>Video & Annimation</span>
+          </div>
+        </a>
+        <a class="m-disable" href="#">
+          <div class="div">
+            <img src="./icons/audio.png" alt="">
+            <div class="arrow"></div>
+            <span>Music & Audio</span>
+          </div>
+        </a>
+        <a href="#">
+          <div class="div">
+            <img src="./icons/writting.png" alt="">
+            <div class="arrow"></div>
+            <span>Programming & Tech</span>
+          </div>
+        </a>
+      </div>
+
+
+
+
+      <!-- ------------------Categories-only-for-small-device-------------- -->
+
+
+
+
+      <div class="mobile-categories flex item-center">
+        <a class="disable" href="#">
+          <div class="div">
+            <img src="./icons/audio.png" alt="">
+            <div class="arrow"></div>
+            <span>Music & Audio</span>
+          </div>
+        </a>
+        <a class="disable" href="#">
+          <div class="div">
+            <img src="./icons/Digital-Marketing.png" alt="">
+            <div class="arrow"></div>
+            <span>Digital Marketing</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- -------------------------Services--------------------- -->
+
+
+
+
+
+
+  <!-- -------------------------Anylitics--------------- -->
+
+
+
+  <section id="anylitics">
+    <div class="container flex item-center justify-between">
+      <div class="active-services">
+        <span>000</span>
+        <h2>Active Service</h2>
+      </div>
+      <div class="Task">
+        <span>000</span>
+        <h2>Task Completed</h2>
+      </div>
+      <div class="Users">
+        <span>000</span>
+        <h2>Users</h2>
+      </div>
+    </div>
+  </section>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
