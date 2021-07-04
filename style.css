@@ -103,56 +103,9 @@
 
 
 /* <-------------------Mobile Menu--------------> */
-
-body .mobile-menu {
-    padding: 0.5rem 0.5rem;
+body nav.d-md-none{
     background-color: var(--primary);
-    z-index: 1;
 }
-
-body .mobile-menu button {
-    cursor: pointer;
-    outline: none;
-    padding: 0.4rem 1rem;
-    background-color: var(--secondary);
-    border: none;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    color: white;
-    font-family: "Roboto-Bold";
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-body nav.mobile-nav {
-    background-color: var(--primary);
-    z-index: 100;
-    display: block;
-    position: sticky;
-    top: 0;
-}
-
-body nav.mobile-nav a {
-    text-decoration: none;
-    color: black;
-    font-family: "Roboto-bold";
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    border-bottom: 1px dotted black;
-    display: block;
-}
-
-@media (min-width:767px) {
-    body nav.mobile-nav {
-        display: none;
-    }
-}
-
 
 
 

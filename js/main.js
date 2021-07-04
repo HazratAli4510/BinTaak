@@ -18,20 +18,3 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultOpen").click();
-
-
-
-  // <----------------Mobile-nav--------------->
-
-  document.getElementById('navbutton2').style.display="none";
-  document.getElementById('mobile-nav').style.display="none";
-  function mbl() {
-    document.getElementById('mobile-nav').style.display="block";
-    document.getElementById('navbutton').style.display="none";
-    document.getElementById('navbutton2').style.display="inline";
-}
-function mbv(){
-  document.getElementById('mobile-nav').style.display="none";
-  document.getElementById('navbutton2').style.display="none";
-  document.getElementById('navbutton').style.display="inline";
-}

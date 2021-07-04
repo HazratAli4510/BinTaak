@@ -6,29 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BinTaak</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 
 <body>
-  <nav class="mobile-nav">
-    <div class="mobile-menu flex item-center justify-between">
-      <div>
-        <img id="navbutton" onclick="mbl()" src="./icons/mobile-menu-icon.png" alt="">
-        <img id="navbutton2" onclick="mbv()" src="./icons/mobile-menu-close-icon.png" alt="">
+  <nav class="navbar d-md-none  navbar-light sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-brand"> Sign in</button>
+      <a class="navbar-brand" href="#"><img src="images/mobile-logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Join</a> <hr>
+            <a class="nav-link active" aria-current="page" href="#">BIN</a><hr>
+            <a class="nav-link active" aria-current="page" href="#">Jobs</a><hr>
+            <a class="nav-link active" aria-current="page" href="#">About us</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <img src="./images/mobile-logo.png" alt="">
-      </div>
-      <div class="div">
-        <button>Join</button>
-      </div>
-    </div>
-    <div id="mobile-nav">
-      <a href="#">Sign In</a>
-      <a href="#">Bin</a>
-      <a href="#">Jobs</a>
-      <a href="#">About</a>
     </div>
   </nav>
   <header>
@@ -252,6 +252,7 @@
     </div>
   </section>
   <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
