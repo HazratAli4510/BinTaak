@@ -460,6 +460,7 @@ section#howorks .container .Buyers .main-content .left {
     height: 500px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 section#howorks .container #Buyers .right ul,
@@ -502,6 +503,7 @@ section#howorks .container .freelancer .main-content .left {
         background-image: none;
         height: 0;
     }
+
     section#howorks .container .Buyers .main-content .left {
         background-image: none;
         height: 0;
@@ -510,38 +512,50 @@ section#howorks .container .freelancer .main-content .left {
     section#howorks .container .main-content {
         display: inline-block;
     }
+
     section#howorks .container #Buyers .right ul,
     section#howorks .container #Freelancers .right ul {
-        list-style-type:disc;
+        list-style-type: disc;
         margin-left: 5rem;
         padding-bottom: 1rem;
     }
+
     section#howorks .container #Buyers .right ul li,
-    section#howorks .container #Freelancers .right ul li{
+    section#howorks .container #Freelancers .right ul li {
         font-size: 1rem;
         text-align: justify;
     }
+
     section#howorks .container #Buyers .right h2,
-    section#howorks .container #Freelancers .right h2{
+    section#howorks .container #Freelancers .right h2 {
         text-align: center;
     }
-    @media (max-width: 575.98px){
+
+    @media (max-width: 575.98px) {
+
         section#howorks .container #Buyers .right ul,
         section#howorks .container #Freelancers .right ul {
             margin-left: 1rem;
         }
+
         section#howorks .container #Buyers .right ul li,
-        section#howorks .container #Freelancers .right ul li{
+        section#howorks .container #Freelancers .right ul li {
             font-size: 1.2rem;
             text-align: justify;
         }
-        section#howorks .container .tabcontent h1{
+
+        section#howorks .container .tabcontent h1 {
             font-size: 2rem;
         }
-        section#howorks .container #Buyers .right ul li, section#howorks .container #Freelancers .right ul li{
+
+        section#howorks .container #Buyers .right ul li,
+        section#howorks .container #Freelancers .right ul li {
             width: 100%;
             text-align: justify;
         }
+    }
+    @media (max-width: 1399.98px) {
+
     }
 }
 
