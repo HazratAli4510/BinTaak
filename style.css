@@ -19,6 +19,7 @@
     font-family: "Roboto-Bold";
     src: url(./fonts/Roboto-Bold.ttf);
 }
+
 @font-face {
     font-family: "Roboto-Medium";
     src: url(./fonts/Roboto-Medium.ttf);
@@ -320,7 +321,7 @@ header .container .right img {
 
 @media (max-width:767px) {
     header .wrapper {
-        padding: 0;
+        padding: 0 0 2rem 0;
     }
 
     .mobile-nav {
@@ -341,6 +342,7 @@ header .container .right img {
 
     header .container .last-slogan h1 {
         padding: 0;
+        display: none !important;
     }
 
     header .container .last-slogan h1 {
@@ -448,34 +450,42 @@ section#howorks .container .tabcontent {
     border-top: none;
     background-color: var(--primary);
 }
-section#howorks .container .tabcontent h1{
+
+section#howorks .container .tabcontent h1 {
     padding: 2rem 0;
 }
+
 section#howorks .container .Buyers .main-content .left {
     background-image: url(./images/man-cartoon.png);
     height: 500px;
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
 }
-section#howorks .container #Buyers .right ul,section#howorks .container #Freelancers .right ul{
-    list-style-type:square
+
+section#howorks .container #Buyers .right ul,
+section#howorks .container #Freelancers .right ul {
+    list-style-type: square
 }
-section#howorks .container #Buyers .right ul li,section#howorks .container #Freelancers .right ul li{
+
+section#howorks .container #Buyers .right ul li,
+section#howorks .container #Freelancers .right ul li {
     font-family: "Roboto-Medium";
     font-size: 1.3rem;
     width: 80%;
     padding: 0.1rem 0;
 }
-section#howorks .container #Buyers .right h2,section#howorks .container #Freelancers .right h2{
-    font-family:"Montserrat-ExtraBold";
-    padding: 1rem 0; 
+
+section#howorks .container #Buyers .right h2,
+section#howorks .container #Freelancers .right h2 {
+    font-family: "Montserrat-ExtraBold";
+    padding: 1rem 0;
     color: var(--third);
 }
 
 section#howorks .container .freelancer .main-content .left {
     background-image: url(./images/Freelancer-photo.png);
     height: 500px;
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -487,7 +497,53 @@ section#howorks .container .freelancer .main-content .left {
 
 /* <----------------How It works? Responsive---------> */
 
+@media (max-width: 991.98px) {
+    section#howorks .container .freelancer .main-content .left {
+        background-image: none;
+        height: 0;
+    }
+    section#howorks .container .Buyers .main-content .left {
+        background-image: none;
+        height: 0;
+    }
 
+    section#howorks .container .main-content {
+        display: inline-block;
+    }
+    section#howorks .container #Buyers .right ul,
+    section#howorks .container #Freelancers .right ul {
+        list-style-type:disc;
+        margin-left: 5rem;
+        padding-bottom: 1rem;
+    }
+    section#howorks .container #Buyers .right ul li,
+    section#howorks .container #Freelancers .right ul li{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    section#howorks .container #Buyers .right h2,
+    section#howorks .container #Freelancers .right h2{
+        text-align: center;
+    }
+    @media (max-width: 575.98px){
+        section#howorks .container #Buyers .right ul,
+        section#howorks .container #Freelancers .right ul {
+            margin-left: 1rem;
+        }
+        section#howorks .container #Buyers .right ul li,
+        section#howorks .container #Freelancers .right ul li{
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+        section#howorks .container .tabcontent h1{
+            font-size: 2rem;
+        }
+        section#howorks .container #Buyers .right ul li, section#howorks .container #Freelancers .right ul li{
+            width: 100%;
+            text-align: justify;
+        }
+    }
+}
 
 
 
@@ -616,12 +672,13 @@ section#categories .container .mobile-categories span {
 
 
 
-section#anylitics{
+section#anylitics {
     height: 300px;
     background-color: var(--third);
     margin: 2rem 0;
 }
-section#anylitics .container span{
+
+section#anylitics .container span {
     font-family: "Roboto-Bold";
     font-size: 60px;
     display: inline-block;
@@ -636,20 +693,24 @@ section#anylitics .container span{
     -o-border-radius: 50px;
     width: 17rem;
     color: white;
-    
+
 }
-section#anylitics .container span::selection,section#anylitics .container h2::selection{
+
+section#anylitics .container span::selection,
+section#anylitics .container h2::selection {
     color: var(--secondary);
 }
-section#anylitics .container h2{
+
+section#anylitics .container h2 {
     font-family: "Roboto-Bold";
     font-size: 40px;
     text-align: center;
     color: white;
     padding: 1rem;
-    margin-top:1rem;
+    margin-top: 1rem;
 }
-section#anylitics .container .Task span{
+
+section#anylitics .container .Task span {
     margin-left: 2rem;
 }
 
@@ -664,49 +725,57 @@ section#anylitics .container .Task span{
 
 
 @media (max-width: 991.98px) {
-    section#anylitics .container .Task span{
+    section#anylitics .container .Task span {
         margin-left: 0rem;
     }
-    section#anylitics .container h2{
+
+    section#anylitics .container h2 {
         font-size: 25px;
     }
-    section#anylitics .container span{
+
+    section#anylitics .container span {
         font-size: 40px;
         width: 13rem;
         margin-top: 2rem;
     }
-    section#anylitics{
+
+    section#anylitics {
         height: 200px;
         margin: 0.5rem;
     }
 }
+
 @media (max-width: 767.98px) {
-    section#anylitics{
+    section#anylitics {
         height: unset;
     }
-    section#anylitics .container{
+
+    section#anylitics .container {
         display: block;
     }
-    section#anylitics .container span,section#anylitics .container .Task span{
+
+    section#anylitics .container span,
+    section#anylitics .container .Task span {
         font-size: 40px;
-        display:inline-block;
+        display: inline-block;
         text-align: center;
         padding: 0;
         padding-top: 1rem;
         margin-top: 0.5rem;
         border-radius: 50px;
-        margin-left:1.5em;
+        margin-left: 1.5em;
 
-        
+
     }
-    section#anylitics .container h2{
+
+    section#anylitics .container h2 {
         font-size: 30px;
         text-align: center;
         color: white;
         padding: 0.5rem;
-        margin-top:0rem;
+        margin-top: 0rem;
     }
-    
+
 }
 
 
